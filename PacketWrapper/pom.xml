@@ -4,32 +4,23 @@
 	<groupId>com.comphenix.packetwrapper</groupId>
 	<artifactId>PacketWrapper</artifactId>
 	<packaging>jar</packaging>
-	<version>1.7.2-R0.5</version>
+	<version>1.8.0-SNAPSHOT</version>
 	<name>PacketWrapper</name>
 	
 	<repositories>
 		<repository>
-			<id>bukkit-repo</id>
-			<url>http://repo.bukkit.org/content/groups/public</url>
-		</repository>
-		<repository>
-      		<id>comphenix-rep</id>
-     	 	<name>Comphenix Maven Releases</name>
-     		<url>http://repo.comphenix.net/content/groups/public</url>
+      		<id>shadowvolt-repo</id>
+     	 	<name>Shadowvolt Maven Releases</name>
+     		<url>http://ci.shadowvolt.com/plugin/repository/everything/</url>
     	</repository>
 	</repositories>
 	
 	<distributionManagement>
 		<repository>
-		  <id>comphenix-releases</id>
-		  <name>Comphenix Maven Releases</name>
-		  <url>http://repo.comphenix.net/content/repositories/releases/</url>
+		  <id>shadowvolt-repo</id>
+		  <name>Shadowvolt Maven Repository</name>
+		  <url>http://ci.shadowvolt.com/plugin/repository/everything/</url>
 		</repository>
-		<snapshotRepository>
-		  <id>comphenix-snapshots</id>
-		  <name>Comphenix Maven Snapshots</name>
-		  <url>http://repo.comphenix.net/content/repositories/snapshots/</url>
-		</snapshotRepository>
 	</distributionManagement>
 	
 	<properties>
@@ -38,16 +29,15 @@
 	
 	<dependencies>
 		<dependency>
-			<groupId>org.bukkit</groupId>
-			<artifactId>bukkit</artifactId>
-			<version>1.7.2-R0.3-SNAPSHOT</version>
-			<type>jar</type>
-			<scope>compile</scope>
+			<groupId>org.spigotmc</groupId>
+  			<artifactId>spigot-api</artifactId>
+  			<version>1.8-R0.1-SNAPSHOT</version>
+  			<scope>provided</scope>
 		</dependency>
 		<dependency>
   			<groupId>com.comphenix.protocol</groupId>
   			<artifactId>ProtocolLib</artifactId>
-  			<version>3.2.0</version>
+  			<version>3.6.3-SNAPSHOT</version>
   		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
